@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll</title>
+
+    </head>
+<body>
+
+    <h2>Add New Employee</h2>
+
+    <form id="main-form">
+        <label>
+            Name:
+            <input type="text" id="txt-name">
+            <span class="error text-error"></span>
+        </label>
+
+        <label>
+            Email:
+            <input type="text" id="txt-email">
+            <span class="error email-error"></span>
+        </label>
+
+        <label>
+            Mobile:
+            <input type="text" id="txt-mobile" placeholder="91 9919819801">
+            <span class="error mobile-error"></span>
+        </label>
+
+        <label>
+            Password:
+            <input type="password" id="txt-password">
+            <span class="error password-error"></span>
+        </label>
+
+        <label>
+            Salary:
+            <input type="range" id="txt-range" min="10000" max="100000" step="1000">
+            <span id="out-salary"></span>
+        </label>
+
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <div class="output">
+        <h3>Employee Details</h3>
+        <p>Name: <span id="out-name"></span></p>
+        <p>Email: <span id="out-email"></span></p>
+        <p>Salary: ₹<span id="out-salary-final"></span></p>
+    </div>
+
+</body>
+</html>
